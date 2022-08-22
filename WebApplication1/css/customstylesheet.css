@@ -1,0 +1,29 @@
+﻿.footerlinks {
+    color:purple;
+    text-decoration: none !important;
+   
+}
+.nav-link:hover {
+    color: ghostwhite;
+}
+.footerlinks:hover {
+    color: ghostwhite;
+}
+.navbar-brand{
+    margin-left:auto;
+    font-size:large;
+    font-family: cursive;
+    font-stretch:expanded;
+   
+}
+#navbarSupportedContent {
+    font-size: 16px !important;
+}
+#footer1 {
+    float: right;
+    background-color:darksalmon;
+}
+
+#img-fluid{
+    min-height:40%;  
+}
