@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <script src="bootstrap/jsfile/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/jsfile/popper.min.js"></script>
+    <script src="bootstrap/jsfile/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+         <a class="navbar-brand" href="#">
+         <img src="Imgs/Logo2.jpg" height="40" width="40" /> E-Saloon </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link active"  href="homepage.aspx">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Staff</a>
+        </li>
+
+         <li class="nav-item active">
+          <a class="nav-link" href="#">Policies</a>
+        </li>
+
+        </ul>
+          <ul class="navbar-nav">
+        <li class="nav-item active">
+          <asp:LinkButton class="nav-link" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">
+             Services
+         </asp:LinkButton>
+        </li>
+
+          <li>
+         <button type="button" class="btn btn-outline-primary">Request an appointment</button>
+          </li>
+          </ul>
+          </div>
+
+         
+      </nav>
+      
+    </div>
+ </form>
+
+        <!--Main Content Placeholder-->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+         <!--Main Content Placeholder-->
+
+
+        <footer>
+            <p >&copy All Rights Reserved.<a class="footerlinks" href="#" target="_blank">Jalgaon Saloon </a></p>
+ </footer>
+
+</body>
+</html>
